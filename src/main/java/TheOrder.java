@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class TheOrder {
 	ArrayList<TheItem> orderItems = new ArrayList<TheItem>();
+	ArrayList<TheItem> orderPrices = new ArrayList<TheItem>();
 
 	public void addItem(TheItem orderItem) {
 		orderItems.add(orderItem);
@@ -26,8 +27,8 @@ public class TheOrder {
 	}
 
 	public void showOrderList() {
-		for (TheItem itemsOnOrder : orderItems) {
-			System.out.println(itemsOnOrder);
+		for (TheItem orderItem : orderItems) {
+			System.out.println(orderItem);
 		}
 	}
 

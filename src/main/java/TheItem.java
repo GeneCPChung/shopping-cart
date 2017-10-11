@@ -23,7 +23,7 @@ public int getItemQuantity() {
 
 @Override
 public String toString() {
-	return "Your items are: " + name + price + quantity;
+	return "Your items are: " + this.name + this.price + this.quantity;
 }
 
 }
